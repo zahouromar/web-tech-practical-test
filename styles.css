@@ -1,23 +1,21 @@
 /* ============================================================
-   SUZA Web Technologies — Practical Test
-   Student      : [WRITE YOUR FULL NAME]
-   Reg No.      : [WRITE YOUR REG NUMBER]
-   Question     : Q[XXX] — [PASTE YOUR QUESTION TITLE]
+   SUZA Web Technologies Practical Test
+   Student Name: Zahor Omar
+   Registration No.: 24BCS018
+   Question Number: Q110
+   Question Title: Personal CV / Resume Page
    ============================================================ */
 
-/* ---------- Starter reset (you may keep or modify) ---------- */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #222222;
   line-height: 1.6;
-  color: #2d3436;
-  background: #fafafa;
 }
 
 img {
@@ -27,79 +25,166 @@ img {
 }
 
 a {
-  color: #0a3d62;
+  color: #0645ad;
 }
 
-/* ---------- Header / Footer (do not over-edit) ---------- */
-.page-header,
-.page-footer {
+a:hover {
+  color: #b35c00;
+}
+
+.page-header {
+  background: #0a2540;
+  color: white;
+  padding: 15px 25px;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
-  background: #ffffff;
-  border-bottom: 1px solid #e2e2e2;
+  gap: 15px;
+  border-bottom: 4px solid #f0c040;
 }
 
-.page-header .logo {
-  flex-shrink: 0;
+.logo {
+  border-radius: 4px;
 }
 
 .page-header h1 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 22px;
 }
 
-.page-header .subtitle {
-  margin: 0;
-  color: #636e72;
-  font-size: 0.9rem;
-}
-
-.page-footer {
-  border-top: 1px solid #e2e2e2;
-  border-bottom: none;
-  margin-top: 3rem;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 0.9rem;
-}
-
-.page-footer p {
-  margin: 0.25rem 0;
+.subtitle {
+  margin: 3px 0 0;
+  color: #dce9f5;
+  font-size: 14px;
 }
 
 main {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 20px;
 }
 
-/* ============================================================
-   YOUR SOLUTION CSS GOES BELOW
-   Delete the .solution placeholder rules once you start.
-   ============================================================ */
+section {
+  margin-bottom: 35px;
+}
 
-.solution {
-  background: #fff;
-  border: 1px dashed #b2bec3;
-  padding: 2rem;
-  border-radius: 10px;
+.hero img {
+  width: 100%;
+  border: 1px solid #cccccc;
+}
+
+.section-title {
+  color: #0a2540;
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-self: center;
+}
+
+.stat-card,
+.project-card {
+  background: white;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.stat-card {
   text-align: center;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.solution img {
-  margin: 1rem auto;
-  border-radius: 8px;
+.stat-card:hover,
+.project-card:hover {
+  border-color: #0a2540;
 }
 
-/* ---------- Example media query (mobile) ---------- */
-@media (max-width: 600px) {
+.stat-num {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0a2540;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #666666;
+}
+
+.projects-image-wrap {
+  margin: 0 0 20px;
+  border: 1px solid #cccccc;
+  background: white;
+}
+
+.project-caption {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #666666;
+  background: white;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #0a2540;
+}
+
+.page-footer {
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.page-footer p {
+  margin: 5px 0;
+}
+
+.page-footer a {
+  color: #f0c040;
+}
+
+.page-footer a:hover {
+  color: white;
+}
+
+@media (max-width: 640px) {
   .page-header {
     flex-direction: column;
     text-align: center;
   }
-  main {
-    padding: 1rem;
+
+  .about-grid,
+  .project-cards {
+    grid-template-columns: 1fr;
   }
+
+  .stat-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }

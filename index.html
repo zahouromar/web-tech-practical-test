@@ -3,81 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Practical Test — [Replace with your question title]</title>
+  <title>Zahor Omar- Software & InfoSec Engineer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!--
     ============================================================
-    SUZA Web Technologies — Practical Test
-    Student Name      : [WRITE YOUR FULL NAME]
-    Registration No.  : [WRITE YOUR REG NUMBER]
-    Question Number   : Q[XXX]
-    Question Title    : [PASTE YOUR ASSIGNED QUESTION TITLE]
+    SUZA Web Technologies- Practical Test
+    Student Name      : Zahor Omar
+    Registration No.  : 24BCS018
+    Question Number   : Q110
+    Question Title    : Personal CV / Resume Page
 
-    YOUR TASK (paste from QUESTIONS.docx):
-    [PASTE THE FULL TASK DESCRIPTION FROM THE QUESTIONS DOCUMENT]
-
-    REQUIREMENTS FOR EVERY QUESTION:
-    1. Use semantic HTML5 (header, main, footer, section, article where appropriate).
-    2. Style everything in styles.css — NO inline styles, NO <style> tag.
-    3. Use Flexbox or CSS Grid for layout (whichever fits your component).
-    4. Include AT LEAST 2 images (use /assets/images/ or your own).
-    5. Include AT LEAST 2 working links (internal or external).
-    6. Add hover effects on interactive elements (links, buttons).
-    7. The page must look reasonable on mobile (add one media query).
-    8. No JavaScript required (HTML + CSS only).
+    REQUIREMENTS CHECKLIST:
+    1. Semantic HTML5 used (header, main, footer, section, article)
+    2. All styles are in styles.css
+    3. CSS Flexbox and Grid used for layout
+    4. At least 2 images included
+    5. At least 2 working external links included
+    6. Hover effects added on links and cards
+    7. Responsive with one media query
+    8. HTML and CSS only
     ============================================================
   -->
 
   <header class="page-header">
-    <img src="assets/images/logo.svg" alt="SUZA logo" class="logo" width="56" height="56" />
+    <img src="assets/images/logo.svg" alt="SUZA logo" class="logo" width="44" height="44" />
     <div>
-      <h1>Web Technologies — Practical Test</h1>
-      <p class="subtitle">State University of Zanzibar · SCCMS</p>
+      <h1>Web Technologies- Practical Test</h1>
+      <p class="subtitle">State University of Zanzibar · SCCMS · BCS </p>
     </div>
   </header>
 
   <main>
-    <!-- ============================================================
-         REPLACE EVERYTHING INSIDE <main> WITH YOUR SOLUTION
-         ============================================================ -->
 
-    <section class="solution">
-      <h2>Your Solution Goes Here</h2>
-      <p>
-        Delete this placeholder and build the component described in your
-        assigned question. Remember: at least <strong>2 images</strong> and
-        <strong>2 links</strong>.
-      </p>
+    <section class="hero" aria-label="Portfolio banner">
+      <img
+        src="assets/images/banner.svg"
+        alt="Zahor Omar- Software Engineer and InfoSec Engineer from Zanzibar, Tanzania"
+      />
+    </section>
 
-      <img src="assets/images/banner.svg" alt="Sample banner — replace with your own content" />
+    <section aria-labelledby="about-heading">
+      <h2 class="section-title" id="about-heading">About Me</h2>
+      <div class="about-grid">
 
-      <p>
-        Helpful reference:
-        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">
-          MDN Web Docs
-        </a>
-        ·
-        <a href="https://massoudhamad.github.io/web-technologies/index.html" target="_blank" rel="noopener noreferrer">
-          Course site
-        </a>
-      </p>
+        <article class="about-text">
+          <p>
+            I'm a Computer Science student at the State University of Zanzibar,
+            building full-stack applications and securing them from real-world
+            threats. I understand the full ecosystem around what I build- the
+            code, the business it serves, the users it targets, and the security
+            threats it faces.
+          </p>
+          <p>
+            I work across the MERN stack and beyond, build practical skills in
+            cybersecurity and frontend development, and am
+            currently co-founding two startups targeting Tanzania's tourism and
+            opportunity-access sectors.
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/zahoromar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >LinkedIn Profile</a>
+            &nbsp;·&nbsp;
+            <a
+              href="https://github.com/zahouromar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub Profile</a>
+          </p>
+        </article>
+
+        <div class="stat-cards" role="list">
+          <div class="stat-card" role="listitem">
+            <div class="stat-num">5</div>
+            <div class="stat-label">Live Projects</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-num">$6.5K</div>
+            <div class="stat-label">Funding Raised</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 class="section-title" id="projects-heading">Projects</h2>
+
+      <figure class="projects-image-wrap">
+        <img
+          src="assets/images/projects.jpg"
+          alt="Overview of three main projects: CloveX tourism marketplace, Opportunities for Tanzanians AI platform, and Legend Sports Center ticketing system"
+        />
+        <figcaption class="project-caption">
+          Three flagship projects currently in development or live deployment (2026)
+        </figcaption>
+      </figure>
+
+      <div class="project-cards">
+
+        <article class="project-card">
+          <h3>CloveX</h3>
+          <p>
+            A unified tourism platform integrating accommodations, hotels, and
+            tour experiences for Tanzania. Accepts global debit cards directly
+           - no currency exchange friction. Won 2nd place in the Coprosperity
+            Fund Business Plan Competition and raised $6,500+ pre-revenue.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Opportunities for Tanzanians</h3>
+          <p>
+            AI-assisted platform surfacing scholarships, jobs, grants, and
+            fellowships fragmented across private networks and disconnected
+            sources. Features automated ingestion pipelines, WhatsApp channel
+            monitoring, and an admin review portal.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Legend Sports Center</h3>
+          <p>
+            End-to-end sports field ticketing and operations system. Customers
+            purchase QR tickets for field access; admins get financial,
+            activity, and employee performance dashboards. Expected to serve
+            7,000+ customers on Eid Al-Adha.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Student Management System</h3>
+          <p>
+            Led requirements gathering and frontend development for a student
+            management system serving 5,000+ students across HUB facilities
+            in Zanzibar.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Library Management System</h3>
+          <p>
+            Full-stack LMS supporting 2,000+ students and 1,000+ books. Includes
+            borrowing workflows, request approvals, borrower history, and usage
+            analytics.
+          </p>
+        </article>
+
+      </div>
     </section>
 
   </main>
 
   <footer class="page-footer">
     <p>
-      Submitted by: <strong>[Your Name]</strong> ·
-      Reg No: <strong>[Your Reg No]</strong> ·
-      Question: <strong>Q[XXX]</strong>
+      Submitted by: <strong>Zahor Omar</strong> ·
+      Reg No: <strong>24BCS018</strong> ·
+      Question: <strong>Q110</strong>
     </p>
     <p>
       <small>
-        © 2026 SUZA · Web Technologies (BCS / BITAM) ·
+        © 2026 SUZA · Web Technologies BCS
         <a href="https://www.suza.ac.tz" target="_blank" rel="noopener noreferrer">suza.ac.tz</a>
+        · Helpful reference:
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+        ·
+        <a href="https://massoudhamad.github.io/web-technologies/index.html" target="_blank" rel="noopener noreferrer">
+          Course Site
+        </a>
       </small>
     </p>
   </footer>
